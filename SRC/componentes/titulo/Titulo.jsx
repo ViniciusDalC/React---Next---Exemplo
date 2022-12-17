@@ -1,8 +1,8 @@
-function Titulo () {
+import style from './Titulo.module.css'
+
+function Titulo (props) {
   return (
-    <div>
-      <h1>Meu Titulo</h1>
-    </div>
+      <h1 className={style.titulo}>{props.children}</h1>
   )
 }
 
